@@ -1,0 +1,168 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://metasyn.pw}{\Large alexander johnson}} & Email : \href{mailto:alexx.johnson@gmail.com}{alexx.johnson@gmail.com}\\
+  \href{https://metasyn.pw}{https://metasyn.pw} & Mobile : +1-530-514-8246 \\
+\end{tabular*}
+
+
+%-----------INTERESTS-----------------
+\section{Interests \& Skills}
+  \text{machine learning, python, data analysis, applied statistics, natural language processing, feature engineering, computational linguistics, software engineering, cognitive science, psycholinguistics }
+ 
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Splunk Inc.}{San Francisco, CA}
+      {Machine Learning Software Engineer}{Dec 2016 -- Present}
+      \resumeItemListStart
+        \resumeItem{Machine Learning Toolkit}
+          {Developed, designed, tested, and released multiple versions of an app used to facilitate and simplify statistical modeling and machine learning; including modeling training, scoring, visualization, regression, classification, outlier detection, time series analysis, model serialization, and data preprocessing.}
+        \resumeItem{Custom Algorithm API}
+          {Designed, implemented, and documented an external python machine learning estimator API for adding custom algorithms and procedures to the Machine Learning Toolkit. Provided examples of custom algorithms and serialization for customers.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Splunk Inc.}{San Francisco, CA}
+      {Senior Technical Training Instructor}{Aug 2014 -- Dec 2016}
+      \resumeItemListStart
+        \resumeItem{Analytics and Data Science Course}
+          {Helped design a three day course covering exploratory data analysis, clustering, regression, classification, model validation, residual analysis, text vectorization, cross validation, etc. Taught the class to over 200 customer accounts and 1000 students, trained new instructors to teach the class, and developed additional material to supplement the lessons.}
+        \resumeItem{Teaching}
+          { Taught the majority of classes, including:
+            \begin{itemize}
+              \item Advanced Searching and Reporting - advanced SPL queries using all features of the search language
+              \item Advanced Dashboards \& Visualizations - data visualization, interactivity, and external javascript integration
+                \item Clustering Management - distributed searching and indexing, high availability and diaster recovery
+              \item Administration - management of indexing, forwarding, security, authentication
+            \end{itemize}}
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Information Technology Group \normalfont at the Gevirtz Graduate School of Education}{Santa Barbara, CA}
+      {Technical Consultant}{Jan 2010 -- June 2014}
+      \resumeItemListStart
+        \resumeItem{Remote Management \& Automation}
+          {Wrote Python, bash, and PowerShell scripts for remote management, data collection, and automation of classrooms, research labs, faculty, and sundry IT infrastructure.}
+        \resumeItem{Maintenance \& Repair}
+          {Maintained, cataloged, repaired, and deployed macOS, Windows, and Linux machines for students, clinicians, and faculty including tasks such as backups, data recovery, documentation, imaging and HIPAA compliance.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {General Assembly} {San Francisco, CA}
+      {Data Science Immersive} {Nov 2014 -- Feb 2015}
+    \resumeSubheading
+      {Univeristy of California, Santa Barbara} {Santa Barbara, CA}
+      {B.A. in Linguistics, Dean's Honors List (GPA 3.5+)} {Sept 2010 -- June 2014}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{The Role of Infelectional Morphology in Co-occurrance Semantic Representations}
+    {Honor's thesis paper and winner of the Undergraduate Paper of the Year in Lingustics award. Explores how morphological vectors can add value to vector space models when simulating simple cognitive tasks.}
+    \resumeSubItem{TED Talk Topic Modeling}
+      {Presented research on the topic modeling \& document clustering of the \href{http://opus.nlpl.eu/TED2013.php}{TED2013 subtitle corpus} (38 milion words - opus.nlpl.eu).}
+    \resumeSubItem{DREDA : Dimensionality Reduced Exploratory Data Analysis}
+      {WebGL (three.js) project used for displaying and exploring high dimensional data that has been clustered and reduced to three dimensions.}
+  \resumeSubHeadingListEnd
+ 
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python, Javascript, R}
+      \hfill
+      \textbf{Libraries}{: numpy, scipy, scikit-learn, pandas, statsmodels}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
